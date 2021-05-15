@@ -1,0 +1,25 @@
+// for loop
+
+// function reverseString(str) {
+//   let reversedStr = [];
+//   for(let i = 0; i < str.length; i++) {
+//     reversedStr.unshift(str[i])
+//   }
+//   return reversedStr.join('');
+// }
+
+// end of for loop
+
+// declarative
+
+const reverseString = (str) => {
+  return str
+    .split('')
+    .reverse()
+    .join('')
+}
+
+// end of declarative
+
+
+reverseString("hello");

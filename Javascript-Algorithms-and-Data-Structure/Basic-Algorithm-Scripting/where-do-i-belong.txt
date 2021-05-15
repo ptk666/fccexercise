@@ -1,0 +1,7 @@
+const getIndexToIns = (arr, num) => {
+
+return arr.filter(val => val < num).length;
+}
+
+
+getIndexToIns([40, 60], 50);

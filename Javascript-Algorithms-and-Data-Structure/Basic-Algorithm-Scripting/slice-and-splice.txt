@@ -1,0 +1,24 @@
+// using slice and splice
+
+// const frankenSplice = (arr1, arr2, n) => {
+//   let copyArr = arr2.slice();
+//   copyArr.splice(n, 0, ...arr1);
+//   return copyArr;
+// }
+
+// end of using slice and splice
+
+// using for loop
+
+const frankenSplice = (arr1, arr2, n) => {
+  let copyArr = arr2.slice();
+  for(let i = 0; i < arr1.length; i++) {
+    copyArr.splice(n, 0, arr1[i]);
+    n++;
+  }
+  return copyArr;
+}
+
+// end of using for loop
+
+frankenSplice([1, 2, 3], [4, 5, 6], 1);

@@ -1,0 +1,29 @@
+// declarative
+
+function mutation(arr) {
+  return arr[1]
+    .toLowerCase()
+    .split('')
+    .every((letter) => {
+      return arr[0].toLowerCase().indexOf(letter) != -1;
+    }) 
+}
+
+// end of declarative
+
+// procedural
+
+// const mutation = (arr) => {
+//   let mutate = arr[0].toLowerCase();
+//   let target = arr[1].toLowerCase();
+//   for(let i = 0; i < target.length; i++) {
+//     if(mutate.indexOf(target[i]) < 0) {
+//       return false;
+//     }
+//   }
+//  return true;
+// }
+
+// end of procedural
+
+mutation(["HEllo", "hey"]);
