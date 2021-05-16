@@ -1,0 +1,17 @@
+// // Only change code below this line
+// function urlSlug(title) {
+
+
+// }
+// // Only change code above this line
+
+const urlSlug = (title) => {
+  let lowerCaseTitle = title.toLowerCase()
+  return lowerCaseTitle
+                      .split(' ')
+                      .filter(a => a)
+                      .join('-')
+}
+
+urlSlug(' Winter Is  Coming');
+console.log(urlSlug(' Winter Is  Coming'))

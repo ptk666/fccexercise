@@ -1,0 +1,38 @@
+// function sumAll(arr) {
+//   let min = Math.min(arr[0], arr[1]);
+//   let max = Math.max(arr[0], arr[1]);
+//   let result = 0;
+
+//   for(let i = min; i <= max; i++) {
+//     result += i;
+//   }
+//   return result;
+// }
+
+// es6
+
+// const sumAll = arr => {
+//   let min = Math.min(arr[0], arr[1]);
+//   let max = Math.max(arr[0], arr[1]);
+//   let result = 0;
+
+//   for(let i = min; i <= max; i++) {
+//     result += i;
+//   }
+//   return result;
+// }
+
+// end of es6
+
+
+// recursion
+
+const sumAll = arr => {
+  const [first, last] = [...arr].sort((a, b) => a - b);
+  return first !== last ? first + sumAll([first + 1, last]) : first;
+}
+
+// end of recursion
+
+sumAll([1, 4]);
+console.log(sumAll([1, 4]));

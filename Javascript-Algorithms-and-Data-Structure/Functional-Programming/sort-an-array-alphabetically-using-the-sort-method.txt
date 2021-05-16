@@ -1,0 +1,13 @@
+// function alphabeticalOrder(arr) {
+//   // Only change code below this line
+//   return arr.sort()
+//   // Only change code above this line
+
+// es6
+
+const alphabeticalOrder = arr => arr.sort();
+
+// end of es6
+
+alphabeticalOrder(["a", "d", "c", "a", "z", "g"]);
+console.log(alphabeticalOrder(["a", "d", "c", "a", "z", "g"]))

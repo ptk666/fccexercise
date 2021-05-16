@@ -1,0 +1,10 @@
+// function destroyer(arr, ...remove) {
+//   return arr.filter(elem => !remove.includes(elem))
+// }
+
+const destroyer = (arr, ...remove) => {
+  return arr.filter(elem => !remove.includes(elem));
+}
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
+console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3))
