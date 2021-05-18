@@ -1,0 +1,8 @@
+function translatePigLatin(str) {
+  return str
+          .replace(/^[aeiou]\w*/g, '$&way')
+          .replace(/(^[^aeiou]+)(\w*)/g, '$2$1ay')
+}
+
+translatePigLatin("onsonant");
+console.log(translatePigLatin("rhythm"))
