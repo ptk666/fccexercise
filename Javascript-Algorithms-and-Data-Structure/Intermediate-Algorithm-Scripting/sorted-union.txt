@@ -1,0 +1,17 @@
+const uniteUnique = (...arr) => {
+  const newArr = [].concat(...arr);
+
+  return [...new Set(newArr)];
+}
+
+// function uniteUnique(...arr) {
+//   const newArr = [];
+//   let mapArr = arr.map((a) => {
+//     return a.filter(c => {
+//       return !newArr.includes(c) ? newArr.push(c) : false;     
+//     })
+//   })
+//   return newArr;
+// }
+
+uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]);
