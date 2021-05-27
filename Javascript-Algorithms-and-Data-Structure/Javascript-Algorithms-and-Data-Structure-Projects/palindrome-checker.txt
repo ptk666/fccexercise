@@ -1,0 +1,16 @@
+function palindrome(str) {
+  var regex = /[\W_]/g
+
+  let strLow = str.toLowerCase().replace(regex, '');
+  console.log(strLow)
+  
+  let strRev = strLow.split('').reverse().join('');
+  console.log(strRev)
+
+  return strLow === strRev;
+  
+}
+
+
+
+palindrome("_eye");
