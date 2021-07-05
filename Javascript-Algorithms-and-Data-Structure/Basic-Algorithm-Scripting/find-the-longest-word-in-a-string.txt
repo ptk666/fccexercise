@@ -1,0 +1,16 @@
+// function findLongestWordLength(str) {
+//   return str.length;
+// }
+
+const findLongestWordLength = (str) => {
+  const word = str.split(' ');
+  let longestWord = word[0];
+  for(var i = 0; i < word.length; i++) {
+    if(word[i].length > longestWord.length) {
+      longestWord = word[i];
+    }  
+  }
+  return longestWord.length;
+}
+
+findLongestWordLength("The quick brown fox jumped over the lazy dog");
